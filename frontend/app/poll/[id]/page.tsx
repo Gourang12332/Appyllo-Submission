@@ -76,7 +76,8 @@ const styles: any = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "#f5f7fb"
+    background: "#f5f7fb",
+    color : "black"
   },
   card: {
     width: "400px",
