@@ -100,7 +100,7 @@ We implemented two fairness controls:
 
 Each vote stores (poll_id, ip) in MongoDB
 
-A unique compound index ensures:
+A unique compound index in mongo DB ensures:
 
 One IP can vote only once per poll
 
