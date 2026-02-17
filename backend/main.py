@@ -42,7 +42,7 @@ async def create_poll(data: CreatePoll):
     await polls_col.insert_one(poll)
     return {
         "poll_id": poll_id,
-        "share_link": f"https://appyllo-submission.vercel.app/{poll_id}"
+        "share_link": f"https://appyllo-submission.vercel.app/poll/{poll_id}"
     }
 
 @app.get("/poll/{poll_id}")
