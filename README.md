@@ -92,11 +92,11 @@ ws://backend-url/ws/poll/{poll_id}
   "results": [5, 3, 10]
 }
 
-##  Fairness / Anti-Abuse Mechanisms
+#  Fairness / Anti-Abuse Mechanisms
 
 We implemented two fairness controls:
 
-1. IP-based restriction (Backend)
+## 1. IP-based restriction (Backend)
 
 Each vote stores (poll_id, ip) in MongoDB
 
@@ -104,7 +104,7 @@ A unique compound index ensures:
 
 One IP can vote only once per poll
 
-2. Browser-based restriction (Frontend)
+## 2. Browser-based restriction (Frontend)
 
 After voting, a key is stored in localStorage:
 
