@@ -22,7 +22,7 @@ export default function Poll() {
       setVoted(true);
     }
 
-    const ws = new WebSocket(`wss://appyllo-submission.onrender.com/ws/poll/${pollId}`);
+    const ws = new WebSocket(`ws://appyllo-submission.onrender.com/ws/poll/${pollId}`);
     ws.onmessage = (e) => {
       const data = JSON.parse(e.data);
       setResults(data.results);
